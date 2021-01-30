@@ -7,7 +7,7 @@ import nltk
 from nltk.tokenize import word_tokenize
 import string
 import ctypes
-OUTPUT_DIR = '/Users/an/desktop/graph'
+OUTPUT_DIR = '/graph'
 logging.basicConfig(level=logging.INFO)
 from cefpython3 import cefpython as cef
 import os 
@@ -93,7 +93,7 @@ def onScreen():
 
 def wGraph():
 	cef.Initialize()
-	cef.CreateBrowserSync(url='file:///C:/Users/AN/Desktop/graph/%s.html'%(word_asf))
+	cef.CreateBrowserSync(url='file:///C:/graph/%s.html'%(word_asf))
 	cef.MessageLoop()
 
 def submitWord():
